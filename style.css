@@ -1,0 +1,260 @@
+/* -------------------------- debug -------------------------- */
+
+/* You can comment/uncomment 1 line below for debugging */
+/* Try it 😉 */
+
+/* *  <!-- ... the anchor link for "section-1" --> */
+/* body {box-shadow: -1px 1px 10px 3px red inset;} */
+/* header {box-shadow: -1px 1px 10px 3px yellow inset;} */
+/* section {box-shadow: -1px 1px 10px 3px blue inset;} */
+
+/* ----------------------------------------------------------- */
+
+*{
+    margin: 0; padding: 0;
+    /* ... here, code for anchor link animations */
+}
+
+
+body {background-color: rgb(245, 245, 245);}
+header {background-color: rgb(180, 134, 36);}
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: 30px;
+    position: relative;
+}
+header a{   
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width:670px) 
+ {h1  :nth-child(2){display: none}
+ h1 :nth-child(5){display: none;} 
+ h1 :nth-child(3){display: none;}}
+
+#section-1 div{
+    box-shadow: -1px 1px 10px 3px inset;
+    margin: 15px; 
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url("été.png");
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation : myAnim 3s allégé 0s  1 alterné vers l'avant ;
+    
+}
+
+#top{
+    flex-direction: column;
+    
+}
+#section-2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+}
+#section-1 a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+}
+#section-2 div div div{
+    box-shadow: -1px 1px 10px 3px inset;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(227, 228, 215);
+    margin: 15px;   
+}
+#footer{
+    text-align: center;
+    height: 200px;
+    background-color: rgb(180, 134, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+#grid{
+        
+        display:contents;
+        border:5px;
+        border-radius:50%;
+        text-align:center;
+        width: 150px;
+        height:150px;  
+        line-height:140px;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 0px #565656;
+        font-size: 30px;
+        margin: 15px;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;     
+    }
+
+    
+    #section-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+    #section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+       
+
+@media screen and (min-width: 700px)
+{
+    h1 :nth-child(2){display: none}
+    h1 :nth-child(5){display: inline}
+    h1 :nth-child(3){display: inline}
+
+}
+h1{
+
+ text-align: left;
+
+}
+
+@media screen and (min-width: 768px)
+{ header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+
+#section-1{
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+
+}
+#grid div{
+    display:grid;
+    place-items: center stretch;
+    
+}
+
+   
+}
+@media screen and (max-width: 1024px);
+{
+    #section-1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+}
+@keyframes été{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 5;
+    }}
+
+@keyframes plage {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#section-1 div:nth-child(2):hover {
+    animation-name: plage;
+    animation-delay: 0ms;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#section-1 div:nth-child(1):hover {
+    animation-name: été;
+    animation-delay: 0ms;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+}
+#section-2 div div:hover {
+    transition-duration: 500ms;
+    transform: scale(1.1);
+}
+#section-2 div div:hover div{
+    transition-delay: 500ms;
+    transform: rotate(360deg);
+    transition-duration: 300ms;
+
+
+}
+
+   
+
+    
+
+    
+
+
+
+   
+    
+
+
+   
+    
+
+    
+      
+    
+        
+    
+
+    
+    
+    
+
+
+    
+/**
+ * ...
+ * ... Mobile fisrt
+ * ...
+ * ... your code here
+ * ...
+ */
