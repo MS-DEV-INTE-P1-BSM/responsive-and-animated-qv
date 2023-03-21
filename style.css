@@ -38,9 +38,7 @@ header a{
     justify-content: center;
     width: 100%;
 }
-h1{
-    
-}
+
 
 @media (max-width:375px) 
  {h1  :nth-child(2){display: none;}
